@@ -64,38 +64,6 @@ The model is trained on the **Flickr8k Dataset** and evaluated using the **BLEU 
 - Transformers
 - gTTS
 
----
-
-# 🧠 Model Architecture
-
-```
-                Input Image
-                     │
-                     ▼
-          Image Preprocessing
-                     │
-                     ▼
-          EfficientNet-B0 Encoder
-                     │
-                     ▼
-        Attention-based LSTM Decoder
-                     │
-                     ▼
-          English Caption Generation
-             │                 │
-             ▼                 ▼
-     Hindi Translation    Marathi Translation
-             │                 │
-             └─────────┬────────┘
-                       ▼
-          Google Text-to-Speech (gTTS)
-                       │
-                       ▼
-        Text + Audio Output (3 Languages)
-```
-
----
-
 
 ---
 
